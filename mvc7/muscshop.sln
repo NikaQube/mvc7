@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "muscshop", "muscshop.csproj", "{0D95A345-06E3-495A-8793-3AB2598B9F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D95A345-06E3-495A-8793-3AB2598B9F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D95A345-06E3-495A-8793-3AB2598B9F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D95A345-06E3-495A-8793-3AB2598B9F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D95A345-06E3-495A-8793-3AB2598B9F09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3BB3895-F84C-4E2B-AE9B-9C66F0DCA063}
+	EndGlobalSection
+EndGlobal

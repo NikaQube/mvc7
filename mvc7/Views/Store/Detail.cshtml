@@ -1,0 +1,16 @@
+﻿@model muscshop.Models.Album
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<center>
+ <h2>@Model.Title</h2>
+<img src="@Model.AlbumUrl" alt="@Model.Title" width="300" height="300"/>
+<p class="mt-5"><em>Artist:</em> @Model.Artist.Name</p>
+<p><em>Genre:</em> @Model.Genre.Name</p>
+<p><em>Price:</em> @Model.Price</p>
+<p><em>Year:</em> @Model.ReleaseYear</p>
+<p><em>Info:</em> @Model.Description</p>
+</center>
+

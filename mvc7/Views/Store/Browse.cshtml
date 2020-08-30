@@ -1,0 +1,25 @@
+﻿@model muscshop.Models.Genre
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browse</h2>
+
+
+<div>
+    <h3><em>@Model.Name</em> Albums</h3>
+    <ul>
+        @foreach (var album in Model.Albums)
+        {
+            <li>
+                <a href="/Store/Detail/@album.AlbumId">
+                    <img src="@album.AlbumUrl" alt="@album.Title" width="200" height="200" />
+                    <span>@album.Title</span>
+                </a>
+            </li>
+            <br>
+        }
+
+    </ul>
+</div>

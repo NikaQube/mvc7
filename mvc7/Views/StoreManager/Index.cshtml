@@ -1,0 +1,38 @@
+﻿@model IEnumerable<muscshop.Models.Album>
+
+@{
+    ViewBag.Title = "Index";
+}
+<br>
+<form action="/StoreManager/Search" method="get">
+    <input type="text" name="parameter" placeholder="Title" />
+    <input type="submit" value="Search" />
+</form>
+
+<br>
+@Html.ActionLink("Create New", "Create")
+<br>
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Photo Url</th>
+        <th>Release Year</th>
+        <th>Description</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Price</td>
+            <td>@item.AlbumUrl</td>
+            <td>@item.ReleaseYear</td>
+            <th>@item.Description</th>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = item.AlbumId })</td>
+            <td>@Html.ActionLink("Delete", "DeleteAlb", new { id = item.AlbumId })</td>
+        </tr>
+    }
+
+</table>
